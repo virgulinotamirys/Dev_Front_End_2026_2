@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Word</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imgs/logo-unitins.jpeg" alt="Logo Unitins">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="banner">
+        <img src="../imgs/banner.png" alt="banner" />
+    </main>
+
+    <section class="section-article">
+        <p>Teste</p>
+        <article class="article">
+            <h1>Post</h1>
+            <p>Conteúdo do post</p>
+        </article>
+    </section>
+
+    <section>
+        <details>
+            <summary>Detalhes</summary>
+            <p>Texto</p>
+        </details>
+    </section>
+    <hr>
+    <aside>
+        <nav>
+            <h1>Neste artigo</h1>
+            <ul>
+                <li>Sumario</li>
+                <li>Atributos</li>
+                <li>Exemplos</li>
+            </ul>
+        </nav>
+    </aside>
+    <aside>
+        <section>
+            <p>Posts de noticias</p>
+            <ul>
+                <li>Noticia 1</li>
+                <li>Noticia 2</li>
+                <li>Noticia 3</li>
+            </ul>
+        </section>
+        <section>
+            <p>Posts de esporte</p>
+            <ol>
+                <li>Esporte</li>
+                <li>Esporte</li>
+                <li>Esporte</li>
+            </ol>
+        </section>
+    </aside>
+    <hr>
+    <section>
+        <figure>
+            <img src="../imgs/logo-unitins.jpeg" alt="logo-unitins" />
+            <figcaption>Descrição da imagem</figcaption>
+        </figure>
+        <figure>
+            <img src="https://www.unitins.br/uniPerfil/Logomarca/Imagem/09997c779523a61bd01bb69b0a789242" alt="html" />
+            <figcaption>Logo gitlab</figcaption>
+        </figure>
+    </section>
+    <!-- Tabela -->
+    <section>
+        <h2>Tabela de Preços</h2>
+        <table>
+            <caption>
+                Tabela
+            </caption>
+            <thead>
+                <tr>
+                    <th>
+                        Produto
+                    </th>
+                    <th>
+                        Detalhes
+                    </th>
+                    <th>
+                        Preço
+                    </th>
+                    <th>
+                        Observação
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Produto -->
+                    <td>
+                        Laranja
+                    </td>
+                    <!-- Detalhes -->
+                    <td>
+                        Laranha Pera
+                    </td>
+                    <!-- Preço -->
+                    <td>
+                        R$ 5,00 kg
+                    </td>
+                    <!-- Observação -->
+                    <td>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulário -->
+    <section>
+        <h1>formulário de Contato</h1>
+        <!-- <form action="..cadastro.html" method="post" target="_blank"> -->
+        <!-- POST E GET - mais utilizadas  -->
+        <form method="post" target="_blank">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" />
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <!-- 000.111.222-33 -->
+                <input type="text" name="cpf" minlength="11" maxlength="14" />
+            </div>
+            <div>
+                <label for="email">E-mail *</label>
+                <input type="email" name="email" required>
+            </div>
+            <div>
+                <input type="radio" id="disc1" name="disciplina" value="disc1" checked />
+                <label for="disc1">Disciplina 1</label>
+            </div>
+            <div>
+                <input type="radio" id="disc2" name="disciplina" value="disc2" />
+                <label for="disc2">Disciplina 2</label>
+            </div>
+            <div>
+                <select name="select">
+                    <option value="nota"> </option>
+                    <option value="nota_a1">Nota A1</option>
+                    <option value="nota_a2">Nota A2</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Escolha seus interesses</legend>
+                <div>
+                    <input type="checkbox" id="frontend" name="frontend" checked />
+                    <label for="frontend">Front end</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="backend" name="backend" />
+                    <label for="backend">Back end</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="date">Data de nascimento</label>
+                <input id="date" type="date" name="date" />
+            </div>
+            <hr>
+            <div>
+                <label for="textarea">Mensagem</label>
+                <textarea id="textarea" name="textarea" rows="4" cols="50">
+                </textarea>
+            </div>
+            <hr>
+            <div>
+                <label for="login">Login * </label>
+                <input type="text" name="login" required>
+            </div>
+            <div>
+                <label for="senha">Senha * </label>
+                <input type="password" name="senha" minlength="8" required>
+            </div>
+            <hr>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </form>
+    </section>
+    <footer>
+        Desenvolvido por Tamirys Virgulino.
+    </footer>
+</body>
+
+</html>

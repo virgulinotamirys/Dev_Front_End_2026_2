@@ -81,45 +81,27 @@
     </section>
     <!-- Tabela -->
     <section>
-        <h2>Tabela de Preços</h2>
         <table>
-            <caption>
-                Tabela
-            </caption>
+            <h2>Tabela de Preços</h2>
+            <caption>Tabela</caption>
             <thead>
                 <tr>
-                    <th>
-                        Produto
-                    </th>
-                    <th>
-                        Detalhes
-                    </th>
-                    <th>
-                        Preço
-                    </th>
-                    <th>
-                        Observação
-                    </th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Informações gerais</th>
+                    <th>Mercado</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <!-- Produto -->
-                    <td>
-                        Laranja
-                    </td>
-                    <!-- Detalhes -->
-                    <td>
-                        Laranha Pera
-                    </td>
-                    <!-- Preço -->
-                    <td>
-                        R$ 5,00 kg
-                    </td>
-                    <!-- Observação -->
-                    <td>
-
-                    </td>
+                    <td>Laranja</td>
+                    <td>R$ 5,00 kg</td>
+                    <td>Laranja Pera</td>
+                </tr>
+                <tr>
+                    <td>Uva</td>
+                    <td>R$ 5,00 pct</td>
+                    <td>Tipo Uva vitória</td>
                 </tr>
             </tbody>
         </table>
@@ -127,72 +109,67 @@
 
     <!-- Formulário -->
     <section>
-        <h1>formulário de Contato</h1>
-        <!-- <form action="..cadastro.html" method="post" target="_blank"> -->
-        <!-- POST E GET - mais utilizadas  -->
-        <form method="post" target="_blank">
+        <h1>Formulário de Contato</h1>
+        <form method="POST" action="contato.html">
             <div>
-                <label for="nome">Nome</label>
+                <label>Nome:</label>
                 <input type="text" name="nome" />
             </div>
             <div>
-                <label for="cpf">CPF</label>
-                <!-- 000.111.222-33 -->
+                <label>E-mail:</label>
+                <input type="email" name="email" required />
+            </div>
+            <div>
+                <label>CPF:</label>
                 <input type="text" name="cpf" minlength="11" maxlength="14" />
             </div>
             <div>
-                <label for="email">E-mail *</label>
-                <input type="email" name="email" required>
+                <label>Data de nascimento:</label>
+                <input type="date" name="data_nascimento" />
             </div>
             <div>
-                <input type="radio" id="disc1" name="disciplina" value="disc1" checked />
-                <label for="disc1">Disciplina 1</label>
+                <p>Escolha o sexo</p>
+                <input type="radio" name="sexo_feminino" />
+                <label>Feminino</label>
+                <input type="radio" name="sexo_masculino" />
+                <label>Masculino</label>
             </div>
             <div>
-                <input type="radio" id="disc2" name="disciplina" value="disc2" />
-                <label for="disc2">Disciplina 2</label>
+                <fieldset>
+                    <legend>Escolha uma opção</legend>
+                    <input type="checkbox" name="escolhaumaopcao" />
+                    <label>Opção 1</label>
+                </fieldset>
+
             </div>
             <div>
-                <select name="select">
-                    <option value="nota"> </option>
-                    <option value="nota_a1">Nota A1</option>
-                    <option value="nota_a2">Nota A2</option>
+                <label>Escolha uma disciplina</label>
+                <select name="disciplina">
+                    <option value="">Escolha uma opção</option>
+                    <option>Desenvolvimento front-end</option>
+                    <option>Algoritmos e programação I
+                    </option>
                 </select>
             </div>
-            <fieldset>
-                <legend>Escolha seus interesses</legend>
-                <div>
-                    <input type="checkbox" id="frontend" name="frontend" checked />
-                    <label for="frontend">Front end</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="backend" name="backend" />
-                    <label for="backend">Back end</label>
-                </div>
-            </fieldset>
             <div>
-                <label for="date">Data de nascimento</label>
-                <input id="date" type="date" name="date" />
-            </div>
-            <hr>
-            <div>
-                <label for="textarea">Mensagem</label>
-                <textarea id="textarea" name="textarea" rows="4" cols="50">
-                </textarea>
-            </div>
-            <hr>
-            <div>
-                <label for="login">Login * </label>
-                <input type="text" name="login" required>
+                <label>Mensagem:</label>
+                <textarea name="mensagem"></textarea>
             </div>
             <div>
-                <label for="senha">Senha * </label>
-                <input type="password" name="senha" minlength="8" required>
+                <label>Login:</label>
+                <input type="text" name="login" />
             </div>
-            <hr>
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="Limpar">
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" />
+            </div>
+            <div>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar"/>
+            </div>
+
         </form>
+
     </section>
     <footer>
         Desenvolvido por Tamirys Virgulino.

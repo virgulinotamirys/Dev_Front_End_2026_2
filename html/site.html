@@ -4,18 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/estilo.css">
-    <title>Site Disciplina de Front-End</title>
+    <title>Site</title>
 </head>
 
 <body>
+    <header>
+        <div class="logo" id="logo">
+            <img src="../imgs/logo-unitins.jpeg" alt="Logo Unitins">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" target="_blank">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="#">Curso 1</a></li>
+                        <li><a href="#">Curso 2</a></li>
+                        <li><a href="#">Curso 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Editais</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="banner">
+        <img src="../imgs/banner.png" alt="banner" />
+    </main>
 
+    <section class="section-article">
+        <h1>Conheça nossos cursos</h1>
+        <article>
+            <div>
+                <span>Câmpus Palmas</span>
+                <ul>
+                    <li>Direito</li>
+                    <li>Engenharia Agronômica</li>
+                    <li>Pedagogia</li>
+                    <li>Serviço Social</li>
+                    <li>Sistemas de Informação</li>
+                </ul>
+            </div>
+            <div>
+                <span>Câmpus Araguatins</span>
+                <ul>
+                    <li>Letras</li>
+                    <li>Pedagogia</li>
+                </ul>
+            </div>
+            <div>
+                <span>Câmpus Augustinópolis</span>
+                <ul>
+                    <li>Ciências Contábeis</li>
+                    <li>Direito</li>
+                    <li>Enfermagem</li>
+                    <li>Medicina</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section class="section-news">
+        <div>
+            <h1>Seção de notícias</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <aside>
+            <!-- <details>
+                <summary>Saiba mais</summary>
+                <p>Texto</p>
+            </details> -->
+            <section>
+                <p>Posts de noticias</p>
+                <ul>
+                    <li>Noticia 1</li>
+                    <li>Noticia 2</li>
+                    <li>Noticia 3</li>
+                </ul>
+            </section>
+            <section>
+                <p>Posts de esporte</p>
+                <ol>
+                    <li>Esporte</li>
+                    <li>Esporte</li>
+                    <li>Esporte</li>
+                </ol>
+            </section>
+        </aside>
+    </section>
+    <section class="section-figure">
+        <figure>
+            <img src="../imgs/logo-unitins.jpeg" alt="logo-unitins" />
+            <figcaption>Descrição da imagem</figcaption>
+        </figure>
+        <figure>
+            <img src="https://www.unitins.br/uniPerfil/Logomarca/Imagem/09997c779523a61bd01bb69b0a789242" alt="html" />
+            <figcaption>Logo gitlab</figcaption>
+        </figure>
+    </section>
+    <!-- Tabela -->
+    <section class="section-table">
+        <table>
+            <caption>Cursos</caption>
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Período</th>
+                    <th>Informações gerais</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Administração</td>
+                    <td>Noturno</td>
+                    <td>Graduação</td>
+                </tr>
+                <tr>
+                    <td>Ciências Contábeis</td>
+                    <td>Noturno</td>
+                    <td>Graduação</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
+    <!-- Formulário -->
+    <section id="contato">
+        <h1>Formulário de Contato</h1>
+        <form method="POST" action="contato.html">
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" />
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input type="email" name="email" required />
+            </div>
+            <div>
+                <label>CPF:</label>
+                <input type="text" name="cpf" minlength="11" maxlength="14" />
+            </div>
+            <div>
+                <label>Data de nascimento:</label>
+                <input type="date" name="data_nascimento" />
+            </div>
+            <div>
+                <p>Escolha o sexo</p>
+                <input type="radio" id="masc" name="escolha" value="masc" checked />
+                <label for="masc">Masculino</label>
+                <input type="radio" id="fem" name="escolha" value="fem" />
+                <label for="fem">Feminino</label>
+                <input type="radio" id="other" name="escolha" value="other" />
+                <label for="other">Outro</label>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Escolha uma opção</legend>
+                    <input type="checkbox" name="escolhaumaopcao" />
+                    <label>Opção 1</label>
+                </fieldset>
+
+            </div>
+            <div>
+                <label>Escolha uma disciplina</label>
+                <select name="disciplina">
+                    <option value="">Escolha uma opção</option>
+                    <option>Desenvolvimento front-end</option>
+                    <option>Algoritmos e programação I
+                    </option>
+                </select>
+            </div>
+            <div>
+                <label>Mensagem:</label>
+                <textarea name="mensagem"></textarea>
+            </div>
+            <div>
+                <label>Login:</label>
+                <input type="text" name="login" />
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" />
+            </div>
+            <div>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar" />
+            </div>
+
+        </form>
+
+    </section>
+    <footer>
+        Desenvolvido por Tamirys Virgulino.
+    </footer>
 </body>
-
-
-
-
-
-
 
 </html>

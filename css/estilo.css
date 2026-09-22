@@ -1,0 +1,164 @@
+/* a {}
+.logo {}
+#id {} */
+
+:root {
+    --cor-primaria: red;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* .logo img {
+} */
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li ul li {
+    width: 100px;
+    background-color: #fff;
+    padding: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+}
+
+.banner img:hover {
+    opacity: 0.5;
+}
+
+.section-article {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.section-article h1 {
+    text-align: center;
+}
+
+.section-article article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-article ul li {
+    list-style-type: circle;
+}
+
+.section-news {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-news div p {
+    color: red;
+    font-size: 20px;
+}
+
+aside {
+    width: 30%;
+}
+
+.section-figure {
+    display: flex;
+    justify-content: center;
+}
+
+.section-figure figure {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.section-figure img:hover {
+    opacity: 0.5;
+}
+
+.section-table {
+    display: flex;
+    justify-content: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #000;
+    font-size: 20px;
+}
+
+table thead {
+    background-color: #ddd;
+}
+
+#contato {
+    padding: 30px;
+}
+
+#contato h1 {
+    text-align: center;
+}
+
+
+/* continuar no formulário */
+
+
+
+footer {
+    background-color: rgba(0, 110, 255, 0.866);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}

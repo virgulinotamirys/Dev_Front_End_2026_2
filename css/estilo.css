@@ -82,7 +82,7 @@ nav li ul li {
 }
 
 .section-article {
-    background-color: #ddd;
+    /* background-color: #ddd; */
     padding: 10px;
 }
 
@@ -132,11 +132,18 @@ aside {
     justify-content: center;
 }
 
+table {
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+}
+
 table,
 th,
 td {
     border: 1px solid #000;
     font-size: 20px;
+    padding: 5px;
 }
 
 table thead {
